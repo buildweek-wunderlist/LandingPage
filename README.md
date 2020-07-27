@@ -29,4 +29,10 @@
 
 ## Plan
 
-# [checkbox:unchecked]
+1. Make readme
+2. Make Wireframe for landing page
+3. Make HTML Landing Page
+4. Make CSS landing Page
+5. Check landing page against rubric
+6. Repeat steps 2-5 for About page
+7. Add JS to and animations to spruce things up
