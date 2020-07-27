@@ -30,7 +30,10 @@
 ## Plan
 
 1. Make readme
+    - Donish
+
 2. Make Wireframe for landing page
+    - Here is the [Wireframe](https://app.lucidchart.com/invitations/accept/eda909fd-73a6-49ec-973c-a94dde4c75f5)
 3. Make HTML Landing Page
 4. Make CSS landing Page
 5. Check landing page against rubric
