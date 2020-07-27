@@ -44,6 +44,10 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
+html{
+    /* background-image: url("https://images.unsplash.com/photo-1595341589548-0c32d1d4a816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"); */
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -53,11 +57,28 @@ nav{
     display: flex;
     justify-content: space-evenly;
     padding:1%;
+    align-items: center;
+}
+nav p{
+    border-left:1px solid black;
+    border-right:1px solid black;
+    padding:2%;
+    font-size: 1.5rem;    
+}
+a{
+    text-decoration: none;
+
+}
+
+h2{
+    font-size: 3rem;
+    text-align: left;
 }
 
 #banner{
     height: 60vh;
-    background-image: url("https://images.unsplash.com/photo-1595532918087-b45afb59a5ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
+    /* background-image: url("https://images.unsplash.com/photo-1595532918087-b45afb59a5ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"); */
+    background-color: transparent;
     display: flex;
     margin: auto;
 }
@@ -70,6 +91,7 @@ nav{
 .top{
     margin: 2% auto;
     width: 60%;
+    padding: 2%;
 }
 
 .middle{
@@ -78,11 +100,11 @@ nav{
 }
 
 .middle div{
-    width: 28%;
+    background-color: whitesmoke;
 }
 
 .middle div img{
-    width: 80%;
+    width: 100%;
     margin: 1% auto;
 }
 
@@ -91,7 +113,38 @@ h3{
     text-align: center;
 }
 
+.cta{
+    padding: 2%;
+    margin: auto;
+}
+
 footer div{
     display: flex;
     justify-content: space-evenly;
+    padding: 2%;
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 3rem;
+    }
+    body{
+        width: 95%;
+    }
+
+    header section.banner{
+        height: 30vh;
+    }
+    .middle{
+        flex-direction: column;
+    }
+
+    .middle div{
+        display: flex;
+        width:80%;
+    }
+    #middle div div.content{
+        display: flex;
+        flex-direction: column;
+    }
 }
