@@ -58,6 +58,10 @@ table {
 	border-spacing: 0;
 }
 
+
+/* ___________________________________________ */
+
+
 nav{
     display: flex;
     /* background-color: #a75b05; */
@@ -79,6 +83,7 @@ nav p a:hover{
 h1{
     background-color: #ebece6d7;
     border-radius: 15px;
+    padding:1% 2%;
 }
 a{
     text-decoration: none;
@@ -109,6 +114,10 @@ h2{
     background-attachment:fixed;
 }
 
+#about header #banner{
+    height: 30vh;
+}
+
 #banner h1{
     margin: auto;
     font-size: 8rem;
@@ -123,6 +132,7 @@ h2{
 .middle{
     display: flex;
     justify-content: space-evenly;
+    margin: 2%;
 
 }
 
@@ -154,10 +164,18 @@ h3{
     font-size: 2rem;
     text-align: center;
 }
-
-.cta{
+footer{
+    display: flex;
+    flex-direction: column;
+}
+#cta{
+    background-color: #9b5a48;
     padding: 2%;
-    margin: auto;
+    width:40%;
+    margin:2% auto;
+    color: black;
+    font-size: 2rem;
+    border-radius: 15px;
 }
 
 footer div{
@@ -200,11 +218,12 @@ footer div p a:hover{
     .middle{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         width: 90%;
     }
 
-    .middle div{
+    section.middle div{
         display: flex;
         width:90%;
         flex-direction: row;
@@ -249,7 +268,7 @@ footer div p a:hover{
     .middle div img{
         width:80%;
     }
-    #second{
+    #first, #second, #last{
         flex-flow: column;
     }
 }
