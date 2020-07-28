@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Playfair+Display:wght@700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -18,9 +20,10 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1px dotted grey;
+	/* border: 1px dotted grey; */
 	font-size: 100%;
-	font: inherit;
+    font: inherit;
+    font-family: 'Mulish', sans-serif;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -30,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    width: 60%;
+    /* width: 60%; */
     margin: auto;
 }
 ol, ul {
@@ -46,6 +49,7 @@ q:before, q:after {
 }
 
 html{
+    background-color: #dedfd9;
     /* background-image: url("https://images.unsplash.com/photo-1595341589548-0c32d1d4a816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"); */
 }
 table {
@@ -55,9 +59,11 @@ table {
 
 nav{
     display: flex;
+    background-color: #a75b05;
     justify-content: space-evenly;
     padding:1%;
     align-items: center;
+    color: white;
 }
 nav p{
     border-left:1px solid black;
@@ -65,9 +71,20 @@ nav p{
     padding:2%;
     font-size: 1.5rem;    
 }
+nav p a:hover{
+    color: black;
+}
+h1{
+    background-color: #ebece618;
+}
 a{
     text-decoration: none;
+    color:whitesmoke;
 
+}
+
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
 }
 
 h2{
@@ -78,9 +95,15 @@ h2{
 #banner{
     height: 60vh;
     /* background-image: url("https://images.unsplash.com/photo-1595532918087-b45afb59a5ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"); */
+    /* background-image: url("https://images.unsplash.com/photo-1453946610176-6be21147c400?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1776&q=80"); */
+    background-image: url("https://images.unsplash.com/photo-1468487422149-5edc5034604f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
     background-color: transparent;
     display: flex;
     margin: auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
 #banner h1{
@@ -89,18 +112,20 @@ h2{
 }
 
 .top{
-    margin: 2% auto;
-    width: 60%;
+    margin: 5% auto;
+    width: 88%;
     padding: 2%;
 }
 
 .middle{
     display: flex;
     justify-content: space-evenly;
+
 }
 
 .middle div{
-    background-color: whitesmoke;
+    background-color: transparent;
+    padding: 2%;
 }
 
 .middle div img{
@@ -124,7 +149,27 @@ footer div{
     padding: 2%;
 }
 
-@media (max-width: 500px){
+footer div p{
+    border-left:1px solid black;
+    border-right:1px solid black;
+    padding:1.2%;
+    font-size: 1.3rem;
+    background-color: transparent;
+}
+footer div p a{
+    color: whitesmoke;
+}
+footer{
+    background-image: url("https://images.unsplash.com/photo-1595766777190-2492d14b9d01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2848&q=80");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;}
+
+footer div p a:hover{
+    color: whitesmoke;
+}
+@media (max-width: 800px){
     h1{
         font-size: 3rem;
     }
@@ -136,15 +181,58 @@ footer div{
         height: 30vh;
     }
     .middle{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .middle div{
+        display: flex;
+        width:90%;
+        flex-direction: row;
+        align-items: center;
+        padding: 2%;    
+    }
+    /* .content{
+        display: flex;
+        flex-direction: column;
+    } */
+    .middle div div.content{
+        display: flex;
+        flex-flow: column;
+    }
+    .middle div img{
+        width: 35%;
+    }
+    #reverse{
+        display: flex;
+        flex-flow: row-reverse;
+    }
+}
+
+@media (max-width:500px){
+    .middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .middle div{
         display: flex;
         width:80%;
+        flex-direction: column;
+        align-items: center;    
+        margin: 3%;
     }
     #middle div div.content{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+    }
+    .middle div img{
+        width:80%;
+    }
+    #reverse{
+        flex-flow: column;
     }
 }
