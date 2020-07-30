@@ -107,6 +107,7 @@ h2{
     background-image: url("https://images.unsplash.com/photo-1468487422149-5edc5034604f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
     background-color: transparent;
     display: flex;
+    flex-direction: column;
     margin: auto;
     background-repeat:no-repeat;
     background-size:cover;
@@ -126,9 +127,32 @@ h2{
 .top{
     margin: 5% auto;
     width: 88%;
-    padding: 2%;
+    padding: 3%;
+    padding-bottom: 4%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 30px;
+    font-size: 1.3rem;
 }
 
+.top p{
+    font-style: italic;
+}
+
+#about section.top{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width:80%;
+    padding: 8%;
+    border-radius: 30px;
+    /* background-color: #9b5a48; */
+    /* border-radius: 20%; */
+}
+.question1{
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5rem;
+ }
 .middle{
     display: flex;
     justify-content: space-evenly;
@@ -137,7 +161,7 @@ h2{
 }
 
 .middle div{
-    background-color: #81B29A;
+    background-color: #F2CC8F;
     
     /* background-color: #F2CC8F;
     background-color: #81B29A; */
@@ -150,8 +174,13 @@ h2{
     color:rgba(255, 255, 255, 0.849);    
 }
 
-#last, #last div{
-    background-color: #F2CC8F;
+/* #last, #last div{
+    background-color: #;
+} */
+
+.description{
+    padding:5%;
+    font-size: 1.3rem;
 }
 
 .middle div img{
@@ -163,6 +192,7 @@ h2{
 h3{
     font-size: 2rem;
     text-align: center;
+    padding: 1.5%;
 }
 footer{
     display: flex;
@@ -173,7 +203,7 @@ footer{
     padding: 2%;
     width:40%;
     margin:2% auto;
-    color: black;
+    color: white;
     font-size: 2rem;
     border-radius: 15px;
 }
@@ -204,6 +234,13 @@ footer{
 footer div p a:hover{
     color: whitesmoke;
 }
+
+#shark:hover{
+    background-image: url("https://images.unsplash.com/photo-1531398574919-7ebcf655bb4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background-position: center;
+    color: white;
+}
+
 @media (max-width: 800px){
     h1{
         font-size: 3rem;
